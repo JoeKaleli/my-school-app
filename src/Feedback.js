@@ -48,9 +48,9 @@ const UpdatesFeedbackPage = () => {
 
     return (
         <div>
-            <h2>Updates and Feedback</h2>
+            <h2 id= "h2">Updates and Feedback</h2>
             <div>
-                <h3>Latest Updates</h3>
+                <h3 className='h3'>Latest Updates</h3>
                 <ul>
                     {updates.map((update, index) => (
                         <li key={index}>{update.title}: {update.description}</li>
@@ -61,15 +61,15 @@ const UpdatesFeedbackPage = () => {
                 <h3>Feedback Form</h3>
                 <form onSubmit={handleFeedbackFormSubmit}>
                     <div>
-                        <label>Name:</label>
+                        <label className='name'>Name:</label>
                         <input type="text" name="name" value={feedbackFormData.name} onChange={handleInputChange} />
                     </div>
                     <div>
-                        <label>Email:</label>
+                        <label id = 'email'>Email:</label>
                         <input type="email" name="email" value={feedbackFormData.email} onChange={handleInputChange} />
                     </div>
                     <div>
-                        <label>Feedback:</label>
+                        <label id = 'feedback'>Feedback:</label>
                         <textarea name="feedback" value={feedbackFormData.feedback} onChange={handleInputChange} />
                     </div>
                     <button type="submit">Submit Feedback</button>

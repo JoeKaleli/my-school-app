@@ -3,7 +3,7 @@ import './App.css'
 import React from 'react';
 import Header from './Header';
 
-import Profile from './Profile';
+
 import UpdatesFeedbackPage from './Feedback';
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <p className= "homepage" >
          <Header />
+         
       </p>
       <p className= "Login">
          <UpdatesFeedbackPage />

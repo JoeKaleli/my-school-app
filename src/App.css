@@ -1,18 +1,29 @@
-.App {
-   display : flex;
-   flex-direction: row;
+*{
+  background-color: beige;
+  
 }
+.homepage {
+  background-color: blue;
+  width: 700px;
+  padding: 0px 0px 0px 0px ;
+  box-sizing: border-box;
+  
+}
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 1000px;
+  margin: 20px;
 
+}
 
 
 
 .Login {
-  width: 50%;
-  color: red;
 
-}
-
-.homepage {
-  width: 50%;
-  color: blue;
+  background-color: red;
+  width: 700px;
+  padding: 0px 0px 0px 100px;
+  border-radius: 30px;
+  box-sizing: border-box;
 }
